@@ -1,0 +1,651 @@
+/* General Settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+:root {
+        --backgroundColor: radial-gradient(circle, rgba(187,186,215,1) 0%, rgba(99,138,198,1) 35%, rgba(0,126,255,1) 100%);
+}
+
+*  {
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.general-font{
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.landing-page{
+    background: var(--backgroundColor);
+    height: 100vh;
+}
+
+/* Nav Bar Section */
+
+.navbar .brand-name{
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover{
+    color: #dfe7f0a4 !important;
+}
+
+/* Hero Section */
+.hero-section .mx-5 h1{
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.hero-section .mx-5 p{
+    font-size: 23px;
+    text-align: justify;
+}
+
+.hero-section .subscribe{
+    position: relative;
+    text-align: center;
+}
+
+.hero-section .subscribe input{
+    width: 20rem;
+    height: 3rem;
+    border-style: none;
+    border-radius: 40px;
+    padding-left: 10px;
+}
+
+.hero-section .subscribe button{
+    position: absolute;
+    height: 2.3rem;
+    top: 12%;
+    bottom: 0;
+    right: 25%;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    transition: all 0.7s ease;
+    background: #1d39c9;
+}
+
+.hero-section .subscribe button:hover{
+    background: #022354bc !important;
+    color: white;
+}
+
+.hero-section .svg-image{
+    margin: 3rem 1rem 1rem -2rem; /* mt, ml, mb, mr*/
+}
+
+/* Feature Section */
+.feature .card{
+    background: var(--backgroundColor) !important;
+    transition: all 2s ease;
+}
+
+.feature .card:hover{
+    transform: translateY(-10px);
+}
+
+/* KEY MEMBER SECTION */
+.key-members {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    filter: grayscale(100%);
+}
+
+.key-members:hover {
+    filter: grayscale(0%);
+}
+
+.key-members img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: transform .6s ease;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.key-members:hover img {
+    transform: scale(1.1);
+}
+
+.key-members .info {
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: 0.5s;
+}
+
+.key-members:hover .info {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.key-members .nav-link .fa-brands{
+    display: block;
+    padding: 3px;
+    margin-top: 20px;
+    margin-right: 9rem;
+    background-color: #f7efefde;
+    border-radius: 80%;
+    color: rgb(24, 22, 22);
+    transition: 0.6s ease-out;
+}
+
+.key-members .nav-link:hover .fa-brands{
+    color: #ffffffde;
+    background-color: rgb(24, 22, 22);
+}
+
+/* Let's get Started Section */
+.get-started{
+
+    background-image: linear-gradient(90deg, rgba(0, 0, 1, 0.6) 100%, rgba(0, 2, 3, 0.491) 100%, rgba(0, 0, 0, 0.45) 100%), url(../Images/image4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem 0px;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* pricing Section */
+.pricing .row{
+    padding-top: 50px;
+}
+
+.pricing .discount-card{
+    position: relative;
+    bottom: 50px;
+}
+
+.pricing .discount-card .discount{
+    position: absolute;
+    top: -12%;
+    height: 70px;
+    width: 70px;
+    right: -5%;
+    background-color:#2a3fda;
+    color: #ffffffde;
+    border-radius: 5px 10px 5px 10px;
+}
+
+.pricing .card-title {
+    position: relative;
+}
+
+.pricing .display-1,
+.pricing .currency-1,
+.pricing .currency{
+    color: #3964da;
+}
+
+.pricing .card-title .currency{
+    font-size: 45px;
+    font-weight: normal;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.pricing .card-title .currency-1{
+    font-size: 45px;
+    font-weight: normal;
+    position: absolute;
+    top: 50px;
+    left: 69px;
+}
+
+.pricing .btn:hover{
+    background:#071fa9b6 !important;
+}
+
+/* CREATIVITY SECTION */
+.creativity-img{
+    position: relative;
+    bottom: 60px;
+    left: 40px;
+}
+
+/* BLOG SECTION */
+.contain {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.blog .card-body .btn{
+    padding: 0 !important;
+}
+
+.blog .card-body{
+    padding: 0 !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: #0000007a;
+    border-radius: 5px 5px 0px 0px; /* top right bottom left */
+    transform: translate(-20%, -20%);
+}
+
+.contain:hover .overlay {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contain:hover .text {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+.blog .contain .text p{
+    font-size: 13px;
+    margin-bottom: 2px !important;
+}
+
+/* FOOTER SECTION */
+
+footer .floating:hover{
+    color: white !important;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 946px){
+    
+    /* NAVBAR */
+    .navbar>.container{
+        justify-content: space-between !important;
+    }
+
+    .navbar .nav-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+    .navbar-nav {
+        z-index: 1000 !important;
+        overflow: auto  ;
+    }
+
+    .navbar .brand-name {
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
+     /* hero section */
+    .landing-page{
+        height: 90vh;
+    }
+
+    .hero-section .align-items-center {
+        justify-content: center !important;
+    }
+    .hero-section .mx-5 h1 {
+        font-weight: 600;
+        font-size: 45px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .hero-section .subscribe button {
+        right: 15%;
+    }
+
+    .hero-section .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .general-font {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    /* FEATURE */
+
+    .feature .text-muted {
+        margin-top: 20px!important;
+        font-size: 20px;
+    }
+
+    .feature .centralise-contents{
+        justify-content: center!important;
+    }
+    .feature .row .card:first-child{
+        margin-right: 40px !important;
+    }
+
+    .my-5{
+        margin-bottom: 0rem !important;
+    }
+
+    /* Teams */
+    .team .text-muted{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .team .centralise-contents {
+        justify-content: space-evenly!important;
+        padding-bottom: 40px !important;
+    }
+
+    /* PRICING */
+    .pricing .centralise-contents{
+        justify-content: center!important;
+    }
+    .pricing .row .card:nth-child(0){
+        margin-right: 40px !important;
+    }
+
+    .pricing .discount-card {
+        position: relative;
+        bottom: 0px !important;
+        margin-left: 20px;
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
+    }
+
+    .pricing .discount-card .card-body{
+        padding-bottom: 0px !important;
+    }
+
+    /* We are Digital */
+    .digital-creative{
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .digital-creative .px-md-5{
+        padding-left: 60px !important;
+        padding-right: 0px !important;
+    }
+
+    .digital-creative .fw-bold{
+        text-align: center;
+    }
+
+    .creativity-img {
+        position: relative;
+        justify-content: center;
+        bottom: 3% !important;
+        top: 20%;
+        left: 90px;
+    }
+
+    /* Blog */
+    .blog .my-5 {
+        margin-top: 0rem!important;
+        margin-bottom: 0rem!important;
+    }
+
+    .blog .blog-info{
+        justify-content: center!important;
+    }
+    .blog .d-flex .card:first-child{
+        margin-right: 30px !important;
+    }
+
+    .blog .d-flex .card:last-child{
+        margin-left: 30px !important;
+    }
+
+
+
+}
+@media only screen and (max-width: 774px){
+}
+
+@media only screen and (max-width: 359px) and (min-width: 50px){
+
+    .padding{
+        padding: 0px 20px;
+    }
+
+    .centralise-contents{
+        justify-content: center!important;
+    }
+
+    /* Nav Bar */
+    .navbar-toggler {
+        padding: 0 !important;
+        border: none !important;
+        position: relative;
+        left: 0;
+    }
+
+    .navbar-toggler:focus{
+        border: none !important;
+        border-style: none !important;
+        outline-style: none !important;
+    }
+
+    .navbar .brand-name {
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+
+    .navbar>.container{
+        justify-content: space-between !important;
+    }
+
+    .navbar .nav-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    /* hero section */
+    .hero-section .mx-5{
+        margin: 0px !important;  
+    }
+    .hero-section h1 {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    .hero-section .subscribe input {
+        width: 15rem;
+    }
+    .hero-section .subscribe button {
+        right: 20%;
+    }
+
+    .svg-image {
+        display: none !important;
+    }
+
+    .general-font {
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .feature .text-muted {
+        margin-top: 20px!important;
+    }
+
+    /* TEAM SECTION*/
+    .padding .h2{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .team .team-members{
+        flex-direction: column;
+    }
+
+    .team .team-members{
+        flex-direction: column;
+    }
+
+    /*Get Started*/
+
+    .get-started h2{
+        padding-bottom: 10px;
+    }
+
+    /* PRICING */
+    .pricing{
+        padding-top: 10px !important;
+        padding-bottom: 0rem!important;
+    }
+
+    .pricing .row{
+        margin: 0px !important;
+        padding: 0px 0px !important;
+    }
+
+    .pricing .discount-card {
+        position: relative;
+        bottom: 0px;
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+
+    .pricing .discount-card .discount {
+        top: -17%;
+    }
+
+    .pricing .card-title .currency-1 {
+        font-size: 30px;
+        font-weight: normal;
+        position: absolute;
+        top: 38px;
+        left: 88px;
+    }
+
+    .pricing .card-title .currency {
+        font-size: 30px;
+        font-weight: normal;
+        position: absolute;
+        top: 38px;
+        left: 80px;
+    }
+
+    /* CREATIVITY */
+    .digital-creative {
+        align-items: center;
+        padding: 40px 0px 0px 0px !important;
+        margin: 0px !important;
+    }
+
+    .digital-creative .px-md-5{
+        padding: 0px 20px !important;
+        text-align: justify;
+    }
+
+    .digital-creative .px-md-5 .fw-bold{
+        text-align: center;
+    }
+
+    .digital-creative h2{
+        text-align: center;
+    }
+
+    .digital-creative .creativity-img{
+        display: none;
+    }
+
+    /* BLOG */
+
+    .blog{
+        margin-top: 50px;
+        padding: 0px !important;
+    }
+
+    .blog .blog-info{
+        padding: 0px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .blog .card{
+        margin-bottom: 40px !important;
+    }
+
+    /* FOOTER*/
+
+    footer .display{
+        display: none;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
